@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+- ng lint
+- ng build --prod --base-href /algolia/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/algolia
+  on:
+    branch: master
