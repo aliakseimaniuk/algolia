@@ -1,36 +1,38 @@
-<ais-instantsearch
-  [config]="{
-    appId: 'LFYJ6698GG',
-    apiKey: '934db2891f238e6aac3b3b484d64c5d9',
-    indexName: 'mycontacts_index'
-  }"
->
-  <div class="left-panel">
-    <ais-clear-refinements></ais-clear-refinements>
-    <h2>Search filters</h2>
-    <ais-refinement-list
-      attribute="company"
-      [searchable]="true"
-      searchPlaceholder="Search the company"
-    ></ais-refinement-list>
-  </div>
-  <div class="right-panel">
-    <ais-search-box></ais-search-box>
-    <ais-hits>
-      <ng-template let-hits="hits">
-        <ol class="ais-Hits-list">
-          <li *ngFor="let hit of hits" class="ais-Hits-item">
-            {{ hit.lastname }}, {{ hit.firstname }}
-            <br />
-            {{ hit.company }}
-            <br />
-            {{ hit.phone }}
-            <br />
-            {{ hit.address }}, {{ hit.city }}, {{hit.zip}}
-          </li>
-        </ol>
-      </ng-template>
-    </ais-hits>
-    <ais-pagination></ais-pagination>
-  </div>
-</ais-instantsearch>
+  <ais-instantsearch
+    [config]="{
+      appId: 'LFYJ6698GG',
+      apiKey: '934db2891f238e6aac3b3b484d64c5d9',
+      indexName: 'mycontacts_index'
+    }"
+  >
+    <div class="left-panel">
+      <ais-clear-refinements
+        buttonLabel="Clear filters"
+      ></ais-clear-refinements>
+      <h2>Search filters</h2>
+      <ais-refinement-list
+        attribute="company"
+        [searchable]="true"
+        searchPlaceholder="Search the company"
+      ></ais-refinement-list>
+    </div>
+    <div class="right-panel">
+      <ais-search-box></ais-search-box>
+      <ais-hits>
+        <ng-template let-hits="hits">
+          <ol class="ais-Hits-list">
+            <li *ngFor="let hit of hits" class="ais-Hits-item">
+              {{ hit.lastname }}, {{ hit.firstname }}
+              <br />
+              {{ hit.company }}
+              <br />
+              {{ hit.phone }}
+              <br />
+              {{ hit.address }}, {{ hit.city }}, {{ hit.zip }}
+            </li>
+          </ol>
+        </ng-template>
+      </ais-hits>
+      <ais-pagination></ais-pagination>
+    </div>
+  </ais-instantsearch>
