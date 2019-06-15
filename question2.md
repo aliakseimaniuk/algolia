@@ -9,7 +9,7 @@
 
 Hello Matt,
 
-Thanks for sharing your feedback. We’re sorry your experience didn’t match your expectations. It was an uncommon instance and we’ll do better. Please feel free reach out to me (alexei@email.com) with any further comments, concerns, or suggestions you wish to share. We would love to make things right if you give us another chance.
+Thanks for sharing your feedback. We’re sorry your experience didn’t match your expectations. It was an uncommon instance and we’ll do better. Please feel free reach out to me (alexei@email.com) with any further comments, concerns, or suggestions you wish to share. We would love to make things right it the future.
 
 Best regards,
 Alexei

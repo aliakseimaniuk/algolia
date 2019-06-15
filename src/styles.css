@@ -1,9 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
-body { font-family: sans-serif }
-.ais-Hits-list { margin-top: 0; margin-bottom: 1em }
-.ais-SearchBox { margin-bottom: 1em }
-.ais-Pagination { margin-top: 1em }
-.left-panel { float: left; width: 250px }
-.right-panel { margin-left: 260px }
-.ais-InstantSearch { max-width: 960px; overflow: hidden; margin: 0 auto }
-.ais-Hits-item { margin-bottom: 1em; width: calc(50% - 1rem) }
+
+.ais-Hits-list {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.ais-SearchBox {
+  margin-bottom: 1em;
+}
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #3a4570;
+}
+
+.navigation {
+  display: flex;
+  height: 100vh;
+  width: 250px;
+  background-color: #f7fafc;
+  border-right: 1px solid #dadde8;
+  padding-top: 15px;
+}
+
+.navigation .user-profile {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.navigation .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navigation .menu a {
+  text-decoration: none;
+  color: #555;
+}
+
+.navigation .menu li {
+  padding: 10px 15px;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  color: #0096db;
+}
+
+.page-container {
+  display: flex;
+}
+
+.contacts-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contacts-header {
+  width: calc((100% - 250px));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 22px 51px 25px 15px;
+  background-color: #fff;
+  z-index: 750;
+  border-bottom: 1px solid #dadde8;
+}
+
+.contacts-container .title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  color: #555;
+}
+
+.new-contact-button {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #26cf19;
+}
+
+.contacts-content {
+  margin-top: 80px;
+  padding: 0px 20px;
+}
+
+.left-panel {
+  float: left;
+  width: 250px;
+  margin-top: 20px;
+}
+.right-panel {
+  margin-left: 260px;
+}
+
+.filter-category {
+  color: #a9b8c7;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.clear-filters-button {
+  margin-left: auto;
+}
+

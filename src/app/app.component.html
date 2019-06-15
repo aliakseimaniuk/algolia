@@ -1,38 +1,66 @@
+<div class="page-container">
+  <aside class="navigation">
+    <ul class="menu">
+      <li>
+        <a href="/"
+          ><span class="fas fa-address-card menu-icon"></span>Contacts</a
+        >
+      </li>
+    </ul>
+  </aside>
+
   <ais-instantsearch
+    class="contacts-container"
     [config]="{
       appId: 'LFYJ6698GG',
       apiKey: '934db2891f238e6aac3b3b484d64c5d9',
       indexName: 'mycontacts_index'
     }"
   >
-    <div class="left-panel">
-      <ais-clear-refinements
-        buttonLabel="Clear filters"
-      ></ais-clear-refinements>
-      <h2>Search filters</h2>
-      <ais-refinement-list
-        attribute="company"
-        [searchable]="true"
-        searchPlaceholder="Search the company"
-      ></ais-refinement-list>
-    </div>
-    <div class="right-panel">
-      <ais-search-box></ais-search-box>
-      <ais-hits>
-        <ng-template let-hits="hits">
-          <ol class="ais-Hits-list">
-            <li *ngFor="let hit of hits" class="ais-Hits-item">
-              {{ hit.lastname }}, {{ hit.firstname }}
-              <br />
-              {{ hit.company }}
-              <br />
-              {{ hit.phone }}
-              <br />
-              {{ hit.address }}, {{ hit.city }}, {{ hit.zip }}
-            </li>
-          </ol>
-        </ng-template>
-      </ais-hits>
-      <ais-pagination></ais-pagination>
+    <header class="contacts-header">
+      <div class="title">
+        Contacts
+        <span class="new-contact-button"
+          ><span class="fas fa-plus-circle"></span> New contact</span
+        >
+      </div>
+      <div class="search">
+        <ais-search-box></ais-search-box>
+      </div>
+    </header>
+
+    <div class="contacts-content">
+      <div class="left-panel">
+        <div class="filter-category">
+          <span style="font-size: 20px;">Company</span>
+          <ais-clear-refinements class="clear-filters-button"
+            buttonLabel="Clear filters"
+          ></ais-clear-refinements>
+        </div>
+        <ais-refinement-list
+          attribute="company"
+          [searchable]="true"
+          searchPlaceholder="Search the company"
+        ></ais-refinement-list>
+      </div>
+      <div class="right-panel">
+        <ais-hits>
+          <ng-template let-hits="hits">
+            <ol class="ais-Hits-list">
+              <li *ngFor="let hit of hits" class="ais-Hits-item">
+                {{ hit.lastname }}, {{ hit.firstname }}
+                <br />
+                {{ hit.company }}
+                <br />
+                {{ hit.phone }}
+                <br />
+                {{ hit.address }}, {{ hit.city }}, {{ hit.zip }}
+              </li>
+            </ol>
+          </ng-template>
+        </ais-hits>
+        <ais-pagination></ais-pagination>
+      </div>
     </div>
   </ais-instantsearch>
+</div>

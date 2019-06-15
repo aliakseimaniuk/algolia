@@ -23,7 +23,7 @@ To ease the integration of Algolia, we provide:
 1. Integrations for frameworks, including Laravel, Symfony, Django, and Rails.
 1. Extensions for Magento 1, Magento 2, Shopify, Wordpress, Zendesk, and Jekyll.
 
-To help you better, I'd like need to know what technologies you use. Could you please share this information with me?
+To help you better, I'd like to know what technologies you use. Could you please share this information with me?
 
 Best regards,
 Alexei
