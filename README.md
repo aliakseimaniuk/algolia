@@ -7,7 +7,7 @@ In this demo I'd like to show you how to use [Algolia](https://www.algolia.com/)
 ## Basic idea
 
 Implement contact book. User should be able to search for contact information (address, phone number) by a person's last name and first name.
-In addition to that user should be able to retrieve all contacts from a specific company.
+In addition to that user should be able to retrieve all contacts from a specific company. Also person should be able to search popular people from his contact list.
 
 ## Demo
 
