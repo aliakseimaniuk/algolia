@@ -30,7 +30,6 @@ body {
   width: 250px;
   background-color: #f7fafc;
   border-right: 1px solid #dadde8;
-  padding-top: 15px;
 }
 
 .navigation .user-profile {
@@ -44,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  padding-top: 15px;
 }
 
 .navigation .menu a {
@@ -67,6 +67,7 @@ body {
 .contacts-container {
   width: 100%;
   overflow: hidden;
+  height: 100vh;
 }
 
 .contacts-header {
@@ -105,7 +106,10 @@ body {
 
 .contacts-content {
   margin-top: 80px;
-  padding: 0px 20px;
+  padding: 0px 20px 20px 20px;
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .left-panel {
@@ -127,3 +131,16 @@ body {
   margin-left: auto;
 }
 
+.contact-card .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-card .sub-title span {
+  color: #a9b8c7;
+}
+
+.ais-Hits-item {
+  width: calc(50% - 1rem);
+}

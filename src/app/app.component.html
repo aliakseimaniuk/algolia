@@ -2,7 +2,7 @@
   <aside class="navigation">
     <ul class="menu">
       <li>
-        <a href="/"
+        <a href="/algolia/"
           ><span class="fas fa-address-card menu-icon"></span>Contacts</a
         >
       </li>
@@ -20,9 +20,9 @@
     <header class="contacts-header">
       <div class="title">
         Contacts
-        <span class="new-contact-button"
+        <!-- <span class="new-contact-button"
           ><span class="fas fa-plus-circle"></span> New contact</span
-        >
+        > -->
       </div>
       <div class="search">
         <ais-search-box></ais-search-box>
@@ -47,14 +47,12 @@
         <ais-hits>
           <ng-template let-hits="hits">
             <ol class="ais-Hits-list">
-              <li *ngFor="let hit of hits" class="ais-Hits-item">
-                {{ hit.lastname }}, {{ hit.firstname }}
-                <br />
-                {{ hit.company }}
-                <br />
-                {{ hit.phone }}
-                <br />
-                {{ hit.address }}, {{ hit.city }}, {{ hit.zip }}
+              <li *ngFor="let hit of hits" class="ais-Hits-item contact-card">
+                <div class="name">{{ hit.lastname }}, {{ hit.firstname }} </div>
+                <div class="sub-title company"><span>Company: </span>{{ hit.company }}</div>
+                <div class="sub-title phone"><span>Phone: </span>{{ hit.phone }}</div>
+                <div class="sub-title address"><span>Address: </span>{{ hit.address }}, {{ hit.city }}, {{ hit.zip }}</div>
+                <div class="sub-title followers"><span>Followers: </span>{{ hit.followers }}</div>
               </li>
             </ol>
           </ng-template>
