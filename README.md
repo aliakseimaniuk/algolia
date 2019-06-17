@@ -19,3 +19,7 @@ In addition to that user should be able to retrieve all contacts from a specific
 ## Demo
 
 [Demo link](https://aliakseimaniuk.github.io/algolia/)
+
+## Notes
+
+1. If users want to search phone numbers in different ways like: `234-234-2233 or 2342342233` you can handle that by 'Formatting the numbers' or 'Configure the relevance'. More info in the following article [Searching Phone Numbers](https://www.algolia.com/doc/guides/managing-results/optimize-search-results/typo-tolerance/how-to/how-to-search-in-phone-numbers-sku-serial-number-isbn/)
